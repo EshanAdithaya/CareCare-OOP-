@@ -4,17 +4,47 @@
  */
 package Views;
 
-/**
+
+import com.mongodb.MongoClientURI;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoDatabase;
+
+/**connectToMongoDB
  *
  * @author eshan
  */
 public class Home extends javax.swing.JFrame {
+
+    private MongoClient mongoClient;
+    private MongoDatabase database;
 
     /**
      * Creates new form Home
      */
     public Home() {
         initComponents();
+        connectToMongoDB();
+    }
+
+    private void connectToMongoDB() {
+        
+        try {
+            MongoClientURI uri = new MongoClientURI(
+                "mongodb+srv://testfeeldbroken10:F42wKgDZrMa@8EG@cluster0.mongodb.net/CarCare?retryWrites=true&w=majority"
+            );
+    
+            mongoClient = MongoClients.create(uri);
+            database = mongoClient.getDatabase("CarCare"); 
+    
+            // Try to get a list of collection names to check the connection
+            database.listCollectionNames().first();
+            System.out.println("Connected to the database successfully");
+        } catch (Exception e) {
+            System.out.println("Failed to connect to the database");
+            e.printStackTrace();
+        }
+
     }
 
     /**
