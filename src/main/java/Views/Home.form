@@ -370,25 +370,25 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jTabbedPane3" alignment="0" max="32767" attributes="0"/>
+                  <Component id="worker_jTabbedPane" alignment="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jTabbedPane3" alignment="0" max="32767" attributes="0"/>
+                  <Component id="worker_jTabbedPane" alignment="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="javax.swing.JTabbedPane" name="jTabbedPane3">
+            <Container class="javax.swing.JTabbedPane" name="worker_jTabbedPane">
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="jPanel8">
+                <Container class="javax.swing.JPanel" name="worker_Add">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                      <JTabbedPaneConstraints tabName="Add Labour">
-                        <Property name="tabTitle" type="java.lang.String" value="Add Labour"/>
+                      <JTabbedPaneConstraints tabName="Add Worker">
+                        <Property name="tabTitle" type="java.lang.String" value="Add Worker"/>
                         <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/icons/user-add.png"/>
                         </Property>
@@ -412,11 +412,11 @@
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jTextField19" max="32767" attributes="0"/>
-                                          <Component id="jTextField20" max="32767" attributes="0"/>
-                                          <Component id="jTextField21" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField22" max="32767" attributes="0"/>
-                                          <Component id="jTextField23" alignment="0" pref="200" max="32767" attributes="0"/>
+                                          <Component id="worker_Add_field_employeeID" max="32767" attributes="0"/>
+                                          <Component id="worker_Add_field_Department" max="32767" attributes="0"/>
+                                          <Component id="worker_Add_field_job" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="worker_Add_field_bankAccount" max="32767" attributes="0"/>
+                                          <Component id="worker_Add_field_bankName" alignment="0" pref="200" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -440,18 +440,18 @@
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jTextField12" max="32767" attributes="0"/>
-                                          <Component id="jTextField15" max="32767" attributes="0"/>
-                                          <Component id="jTextField16" max="32767" attributes="0"/>
-                                          <Component id="jTextField17" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField18" alignment="0" pref="200" max="32767" attributes="0"/>
+                                          <Component id="worker_Add_field_DOB" max="32767" attributes="0"/>
+                                          <Component id="worker_Add_field_gender" max="32767" attributes="0"/>
+                                          <Component id="worker_Add_field_contactNo" max="32767" attributes="0"/>
+                                          <Component id="worker_Add_field_email" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="worker_Add_field_address" alignment="0" pref="200" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="272" max="-2" attributes="0"/>
-                                      <Component id="jButton13" min="-2" pref="114" max="-2" attributes="0"/>
+                                      <Component id="worker_Add_field_SubmitBTN" min="-2" pref="114" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
-                                      <Component id="jButton14" min="-2" pref="114" max="-2" attributes="0"/>
+                                      <Component id="worker_Add_field_resetBTN" min="-2" pref="114" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace pref="654" max="32767" attributes="0"/>
@@ -459,7 +459,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
-                                  <Component id="jTextField14" min="-2" pref="200" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_name" min="-2" pref="200" max="-2" attributes="0"/>
                                   <EmptySpace pref="944" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -473,64 +473,64 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField12" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_DOB" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField15" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_gender" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField16" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_contactNo" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel35" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField17" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_email" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel36" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField18" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_address" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField19" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_employeeID" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel39" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField20" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_Department" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel38" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField21" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_job" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel40" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField22" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_bankAccount" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel41" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField23" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_bankName" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jButton13" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Component id="jButton14" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_SubmitBTN" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_resetBTN" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="180" max="32767" attributes="0"/>
                           </Group>
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                                  <Component id="jTextField14" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_Add_field_name" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace pref="646" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -588,50 +588,56 @@
                         <Property name="text" type="java.lang.String" value="Banking Information(bank Account) :-"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField12">
+                    <Component class="javax.swing.JTextField" name="worker_Add_field_DOB">
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField14">
+                    <Component class="javax.swing.JTextField" name="worker_Add_field_name">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="worker_Add_field_nameActionPerformed"/>
+                      </Events>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField15">
+                    <Component class="javax.swing.JTextField" name="worker_Add_field_gender">
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField16">
+                    <Component class="javax.swing.JTextField" name="worker_Add_field_contactNo">
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField17">
+                    <Component class="javax.swing.JTextField" name="worker_Add_field_email">
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField18">
+                    <Component class="javax.swing.JTextField" name="worker_Add_field_address">
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField19">
+                    <Component class="javax.swing.JTextField" name="worker_Add_field_employeeID">
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField20">
+                    <Component class="javax.swing.JTextField" name="worker_Add_field_Department">
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField21">
+                    <Component class="javax.swing.JTextField" name="worker_Add_field_job">
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField22">
+                    <Component class="javax.swing.JTextField" name="worker_Add_field_bankAccount">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel41">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Banking Information(bank Name) :-"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField23">
+                    <Component class="javax.swing.JTextField" name="worker_Add_field_bankName">
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton13">
+                    <Component class="javax.swing.JButton" name="worker_Add_field_SubmitBTN">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Submit"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="worker_Add_field_SubmitBTNActionPerformed"/>
+                      </Events>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton14">
+                    <Component class="javax.swing.JButton" name="worker_Add_field_resetBTN">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Reset"/>
                       </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="jPanel9">
+                <Container class="javax.swing.JPanel" name="worker_update">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                      <JTabbedPaneConstraints tabName="Update Labour">
-                        <Property name="tabTitle" type="java.lang.String" value="Update Labour"/>
+                      <JTabbedPaneConstraints tabName="Update Worker">
+                        <Property name="tabTitle" type="java.lang.String" value="Update Worker"/>
                         <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/icons/refresh.png"/>
                         </Property>
@@ -646,7 +652,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  <Component id="jPanel18" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_upt" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -658,7 +664,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  <Component id="jPanel18" min="-2" max="-2" attributes="0"/>
+                                  <Component id="worker_upt" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -666,7 +672,7 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Container class="javax.swing.JPanel" name="jPanel18">
+                    <Container class="javax.swing.JPanel" name="worker_upt">
 
                       <Layout>
                         <DimensionLayout dim="0">
@@ -877,6 +883,9 @@
                         <Component class="javax.swing.JTextField" name="jTextField78">
                         </Component>
                         <Component class="javax.swing.JTextField" name="jTextField79">
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField79ActionPerformed"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JTextField" name="jTextField80">
                         </Component>
@@ -927,11 +936,11 @@
                     </Container>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="jPanel10">
+                <Container class="javax.swing.JPanel" name="worker_delete">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                      <JTabbedPaneConstraints tabName="Delete Labour">
-                        <Property name="tabTitle" type="java.lang.String" value="Delete Labour"/>
+                      <JTabbedPaneConstraints tabName="Delete Worker">
+                        <Property name="tabTitle" type="java.lang.String" value="Delete Worker"/>
                         <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/icons/trash.png"/>
                         </Property>
@@ -1009,11 +1018,11 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="jPanel11">
+                <Container class="javax.swing.JPanel" name="worker_status">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                      <JTabbedPaneConstraints tabName="Labour Status">
-                        <Property name="tabTitle" type="java.lang.String" value="Labour Status"/>
+                      <JTabbedPaneConstraints tabName="Worker Status">
+                        <Property name="tabTitle" type="java.lang.String" value="Worker Status"/>
                         <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/icons/newspaper.png"/>
                         </Property>
