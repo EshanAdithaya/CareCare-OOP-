@@ -2,11 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/Application.java to edit this template
  */
-
 package Views;
-
-import empServices.*; 
-
 
 /**
  *
@@ -58,15 +54,15 @@ public class Home extends javax.swing.JFrame {
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
-        bdayField = new javax.swing.JTextField();
-        empNameField = new javax.swing.JTextField();
-        genderField = new javax.swing.JTextField();
-        contactNumField = new javax.swing.JTextField();
-        emailField = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
+        jTextField14 = new javax.swing.JTextField();
+        jTextField15 = new javax.swing.JTextField();
+        jTextField16 = new javax.swing.JTextField();
+        jTextField17 = new javax.swing.JTextField();
         jTextField18 = new javax.swing.JTextField();
         jTextField19 = new javax.swing.JTextField();
         jTextField20 = new javax.swing.JTextField();
-        jobField = new javax.swing.JTextField();
+        jTextField21 = new javax.swing.JTextField();
         jTextField22 = new javax.swing.JTextField();
         jLabel41 = new javax.swing.JLabel();
         jTextField23 = new javax.swing.JTextField();
@@ -94,13 +90,13 @@ public class Home extends javax.swing.JFrame {
         jTextField85 = new javax.swing.JTextField();
         jTextField86 = new javax.swing.JTextField();
         jTextField87 = new javax.swing.JTextField();
+        jLabel119 = new javax.swing.JLabel();
         jTextField88 = new javax.swing.JTextField();
         jButton30 = new javax.swing.JButton();
         jButton31 = new javax.swing.JButton();
         jLabel120 = new javax.swing.JLabel();
         jTextField89 = new javax.swing.JTextField();
         jButton32 = new javax.swing.JButton();
-        jLabel119 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jTextField24 = new javax.swing.JTextField();
         jTextField25 = new javax.swing.JTextField();
@@ -498,11 +494,6 @@ public class Home extends javax.swing.JFrame {
         jLabel41.setText("Banking Information(bank Name) :-");
 
         jButton13.setText("Submit");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
-            }
-        });
 
         jButton14.setText("Reset");
 
@@ -524,7 +515,7 @@ public class Home extends javax.swing.JFrame {
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTextField19)
                             .addComponent(jTextField20)
-                            .addComponent(jobField)
+                            .addComponent(jTextField21)
                             .addComponent(jTextField22)
                             .addComponent(jTextField23, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)))
                     .addGroup(jPanel8Layout.createSequentialGroup()
@@ -543,10 +534,10 @@ public class Home extends javax.swing.JFrame {
                                     .addComponent(jLabel36))))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(bdayField)
-                            .addComponent(genderField)
-                            .addComponent(contactNumField)
-                            .addComponent(emailField)
+                            .addComponent(jTextField12)
+                            .addComponent(jTextField15)
+                            .addComponent(jTextField16)
+                            .addComponent(jTextField17)
                             .addComponent(jTextField18, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGap(272, 272, 272)
@@ -557,7 +548,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel8Layout.createSequentialGroup()
                     .addGap(120, 120, 120)
-                    .addComponent(empNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(937, Short.MAX_VALUE)))
         );
         jPanel8Layout.setVerticalGroup(
@@ -568,19 +559,19 @@ public class Home extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel32)
-                    .addComponent(bdayField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel33)
-                    .addComponent(genderField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel34)
-                    .addComponent(contactNumField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel35)
-                    .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel36)
@@ -596,7 +587,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel38)
-                    .addComponent(jobField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel40)
@@ -613,7 +604,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel8Layout.createSequentialGroup()
                     .addGap(41, 41, 41)
-                    .addComponent(empNameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(646, Short.MAX_VALUE)))
         );
 
@@ -639,6 +630,8 @@ public class Home extends javax.swing.JFrame {
 
         jLabel118.setText("Banking Information(bank Account) :-");
 
+        jLabel119.setText("Banking Information(bank Name) :-");
+
         jButton30.setText("Submit");
 
         jButton31.setText("Reset");
@@ -659,7 +652,8 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(jLabel117)
                             .addComponent(jLabel115)
                             .addComponent(jLabel116)
-                            .addComponent(jLabel118))
+                            .addComponent(jLabel118)
+                            .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTextField84)
@@ -681,9 +675,9 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(jTextField82)
                             .addComponent(jTextField83, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)))
                     .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addGap(274, 274, 274)
+                        .addGap(272, 272, 272)
                         .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(108, 108, 108)
+                        .addGap(110, 110, 110)
                         .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
@@ -754,7 +748,9 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jLabel118)
                     .addComponent(jTextField87, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jTextField88, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel119)
+                    .addComponent(jTextField88, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -767,16 +763,11 @@ public class Home extends javax.swing.JFrame {
                     .addContainerGap(645, Short.MAX_VALUE)))
         );
 
-        jLabel119.setText("Banking Information(bank Name) :-");
-
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1056, Short.MAX_VALUE))
+            .addGap(0, 1257, Short.MAX_VALUE)
             .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel9Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -785,10 +776,7 @@ public class Home extends javax.swing.JFrame {
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                .addContainerGap(442, Short.MAX_VALUE)
-                .addComponent(jLabel119)
-                .addGap(251, 251, 251))
+            .addGap(0, 709, Short.MAX_VALUE)
             .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel9Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -2776,29 +2764,6 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton29ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
-        
-        employeeService empSer = new employeeService();
-        String empName = empNameField.getText();
-        String email = emailField.getText();
-        String contactNum = contactNumField.getText();
-        String bday = bdayField.getText();
-        String job = jobField.getText();
-        String gender = genderField.getText();
-
-        // Now you can use these values in your database operations
-        empSer.insertEmployee( empName, email, contactNum, bday, job, gender);
-               empNameField.setText("");
-               emailField.setText("");
-               contactNumField.setText("");
-               bdayField.setText("");
-               jobField.setText("");
-               genderField.setText("");
-              
-               
-    }//GEN-LAST:event_jButton13ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -2850,12 +2815,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel Worker;
     private javax.swing.JPanel Works;
     private javax.swing.JMenuItem aboutMenuItem;
-    private javax.swing.JTextField bdayField;
-    private javax.swing.JTextField contactNumField;
     private javax.swing.JMenuItem contentsMenuItem;
-    private javax.swing.JTextField emailField;
-    private javax.swing.JTextField empNameField;
-    private javax.swing.JTextField genderField;
     private javax.swing.JMenu helpMenu;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
@@ -3054,11 +3014,17 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField21;
     private javax.swing.JTextField jTextField22;
     private javax.swing.JTextField jTextField23;
     private javax.swing.JTextField jTextField24;
@@ -3134,7 +3100,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField88;
     private javax.swing.JTextField jTextField89;
     private javax.swing.JTextField jTextField9;
-    private javax.swing.JTextField jobField;
     private javax.swing.JMenuBar menuBar;
     // End of variables declaration//GEN-END:variables
 
