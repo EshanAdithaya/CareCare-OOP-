@@ -87,39 +87,6 @@ public class employeeService {
              JOptionPane.showMessageDialog(frame, "Data Deleteed Error!");
     }
     }
-    
-     public void displayEmployeeData() {
-        try {
-            String query = "SELECT * FROM employee";
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(query);
-
-            // Print column headers
-            System.out.printf("%-5s%-20s%-30s%-15s%-15s%-15s%-10s%n",
-                    "ID", "Name", "Email", "Contact", "Birthday", "Job", "Gender");
-
-            // Print employee data
-            while (resultSet.next()) {
-                System.out.printf("%-5s%-20s%-30s%-15s%-15s%-15s%-10s%n",
-                        resultSet.getString("Emp_id"),
-                        resultSet.getString("Emp_name"),
-                        resultSet.getString("Email"),
-                        resultSet.getString("Contact_num"),
-                        resultSet.getString("BDay"),
-                        resultSet.getString("Job"),
-                        resultSet.getString("Gender"));
-            }
-
-            // Close resources
-            resultSet.close();
-            statement.close();
-
-        } catch (SQLException e) {
-            System.err.println("Error displaying employee data: " + e);
-            JFrame frame = new JFrame("Error");
-            JOptionPane.showMessageDialog(frame, "Error displaying employee data!");
-        }
-    }
 //        try {
 //            String query = "DELETE FROM employee WHERE Emp_id=?";
 //            PreparedStatement preparedStatement = DbConnection.getConnection().prepareStatement(query);
