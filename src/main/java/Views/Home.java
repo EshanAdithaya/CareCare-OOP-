@@ -2590,6 +2590,8 @@ public class Home extends javax.swing.JFrame {
         txtsuemail.setText("");
         txtsucompany.setText("");
         txtsuid.setText("");
+        txtsuname.requestFocus();
+        searchSupplier();
 
         // Reset the current supplier ID after the update
         currentSupplierId= 0;
@@ -2925,5 +2927,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField txtsuname;
     private javax.swing.JTextField txtsuphone;
     // End of variables declaration//GEN-END:variables
+
+    private void searchSupplier() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
 }
