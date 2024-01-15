@@ -23,7 +23,7 @@ public class employeeService {
     DbConnection Dbconn = new DbConnection ();
     private Connection connection =Dbconn.getConnection();
     
-     public  void insertEmployee( String empName, String email, String contactNum, String bday, String job, String gender) {
+    public  void insertEmployee( String empName, String email, String contactNum, String bday, String job, String gender) {
         try {
             String query = "INSERT INTO employee ( Emp_name, Email, Contact_num, BDay, Job, Gender) VALUES ( ?, ?, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
@@ -46,7 +46,7 @@ public class employeeService {
         }
     }
 
-    public void updateEmployee(int empId, String empName, String email, String contactNum, String bday, String job, String gender) {
+    public void updateEmployee(String empId, String empName, String email, String contactNum, String bday, String job, String gender) {
         try {
              
             String query = "UPDATE employee SET Emp_name=?, Email=?, Contact_num=?, BDay=?, Job=?, Gender=? WHERE Emp_id=?";
@@ -57,25 +57,34 @@ public class employeeService {
             preparedStatement.setString(4, bday);
             preparedStatement.setString(5, job);
             preparedStatement.setString(6, gender);
-            preparedStatement.setInt(7, empId);
+            preparedStatement.setString(7, empId);
 
             preparedStatement.executeUpdate();
             System.out.println("Employee updated successfully.");
+            JFrame frame = new JFrame("SUCCESS");
+             JOptionPane.showMessageDialog(frame, "Data Updated Successfully!");
         } catch (SQLException e) {
             System.err.println("Error updating employee: " + e);
+            JFrame frame = new JFrame("SUCCESS");
+             JOptionPane.showMessageDialog(frame, "Data Updated Error!");
         }
     }
 
-    public  void deleteEmployee(int empId) {
+    public  void deleteEmployee(String empId) {
     try {
      String query = "DELETE FROM employee WHERE Emp_id=?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
-            preparedStatement.setInt(1, empId);
+            preparedStatement.setString(1, empId);
             preparedStatement.executeUpdate();
             System.out.println("Employee deleted successfully.");
+            
+            JFrame frame = new JFrame("SUCCESS");
+             JOptionPane.showMessageDialog(frame, "Data Deleted Successfully!");
 
     } catch (SQLException e) {
      System.out.println("Error deleting employee: " + e);
+     JFrame frame = new JFrame("SUCCESS");
+             JOptionPane.showMessageDialog(frame, "Data Deleteed Error!");
     }
     }
 //        try {
